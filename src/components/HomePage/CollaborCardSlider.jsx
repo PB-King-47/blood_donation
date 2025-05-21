@@ -26,13 +26,13 @@ const CollaborCardSlider = () => {
                 onSlideChange={() => console.log("slide change")}
             >
                 {imageData.map((src, index) => (
-                    <SwiperSlide>
-                        <div className="my-10">
+                    <SwiperSlide key={index}>
+                        <div className="my-10 flex justify-center items-center h-48 transition-transform duration-300 hover:scale-105 shadow-xl hover:shadow-2xl">
                             <img 
                             key={index} 
                             srcSet={src}
                             alt={`Partner ${index + 1}`}
-                            className="lg:w-50 md:w-40 h-auto object-contain mx-auto"
+                            className="lg:w-50 md:w-40 h-auto object-contain"
                          />
                         </div>
                     </SwiperSlide>
