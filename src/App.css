@@ -1,0 +1,7 @@
+
+.content {
+    @apply px-[62px]
+}
+.section-space {
+    @apply my-[58px]
+}
