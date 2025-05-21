@@ -4,7 +4,7 @@ import CollaborCardSlider from './CollaborCardSlider';
 const OurCollaborators = () => {
     return (
         <div className='content section-space'>
-            <h1 className='font-bold text-3xl capitalize'>Our collaborators</h1>
+            <h1 className='font-bold text-4xl mb-5 capitalize'>Our collaborators</h1>
             
             {/* Carusal section */}
             <CollaborCardSlider />

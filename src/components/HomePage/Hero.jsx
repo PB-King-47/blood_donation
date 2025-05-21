@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <div className='h-[100vh]'>
             <div className="bg-image relative">
-                <img src={Blood} className='object-cover absolute translate-x-[-30%] translate-y-[-10%] z-[-10]' alt="Image" srcset="" />
+                <img srcSet={Blood} className='object-cover absolute translate-x-[-30%] translate-y-[-10%] z-[-10]' alt="Image" />
             </div>
   
             <div className="content flex justify-end pt-[12%]"> 
