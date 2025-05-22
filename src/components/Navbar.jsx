@@ -10,11 +10,11 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex items-center justify-center text-[20px]">
-                    <Link to={"/"} className='px-8 py-2'>Home</Link>
-                    <Link to={"/"} className='px-8 py-2'>About</Link>
-                    <Link to={"/"} className='px-8 py-2'>Find Blood</Link>
-                    <Link to={"/"} className='px-8 py-2'>Register Now</Link>
-                    <Link to={"/"} className='px-8 py-2 btn border-2 rounded'>
+                    <Link to={"/"} className='px-8 py-2 hover:border-b-2'>Home</Link>
+                    <Link to={"/"} className='px-8 py-2 hover:border-b-2'>About</Link>
+                    <Link to={"/"} className='px-8 py-2 hover:border-b-2'>Find Blood</Link>
+                    <Link to={"/"} className='px-8 py-2 hover:border-b-2'>Register Now</Link>
+                    <Link to={"/"} className='px-8 py-2 btn border-2 rounded hover:bg-gray-800 hover:text-white'>
                         Log In 
                     </Link>
                 </div>

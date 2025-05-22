@@ -1,1 +1,12 @@
 npm i swiper
+npm uninstall @mui/icons-material @mui/material @emotion/styled @emotion/react
+
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+
+
+npm uninstall --save @fortawesome/fontawesome-svg-core
+npm uninstall --save @fortawesome/free-solid-svg-icons
+npm uninstall --save @fortawesome/react-fontawesome
+
+
+npm install @fortawesome/free-brands-svg-icons
