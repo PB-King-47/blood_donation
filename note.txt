@@ -10,3 +10,5 @@ npm uninstall --save @fortawesome/react-fontawesome
 
 
 npm install @fortawesome/free-brands-svg-icons
+
+npm install -D vite-plugin-svgr
