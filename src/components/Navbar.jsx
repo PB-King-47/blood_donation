@@ -25,7 +25,7 @@ const Navbar = () => {
                     <Link to={"/"} className="px-8 py-2 hover:underline hover:decoration-3 hover:underline-offset-8">
                         About
                     </Link>
-                    <Link to={"/"} className="px-8 py-2 hover:underline hover:decoration-3 hover:underline-offset-8">
+                    <Link to={"/findblood"} className="px-8 py-2 hover:underline hover:decoration-3 hover:underline-offset-8">
                         Find Blood
                     </Link>
                     {/* <Link

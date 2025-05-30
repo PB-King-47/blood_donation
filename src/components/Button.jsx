@@ -6,7 +6,7 @@ const Button = ({
   className = '', 
   src, 
   onClick, 
-  type = 'button' 
+  type = 'button', 
 }) => {
   return (
     <button

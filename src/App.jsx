@@ -4,6 +4,7 @@ import HomePage from './page/HomePage'
 import Master from 'src/page/layouts/Master'
 import RegisterPage from './page/RegisterPage'
 import RegisterOrgPage from './page/RegisterOrgPage'
+import FindBlood from './page/FindBlood'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Route path={"*"} element={<HomePage/>} />
         <Route path={"/registerdoner"} element={<RegisterPage />} />
         <Route path={"/registerorg"} element={<RegisterOrgPage />} />
+        <Route path={"/findblood"} element={<FindBlood />} />
       
       </Route>
     </Routes>
