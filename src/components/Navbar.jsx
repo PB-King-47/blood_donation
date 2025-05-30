@@ -28,12 +28,7 @@ const Navbar = () => {
                     <Link to={"/findblood"} className="px-8 py-2 hover:underline hover:decoration-3 hover:underline-offset-8">
                         Find Blood
                     </Link>
-                    {/* <Link
-                        to={"/register"}
-                        className="px-8 py-2 hover:border-b-2"
-                    >
-                        Register Now
-                    </Link> */}
+                    
                     <div
                         className="relative px-8 py-2 hover:underline hover:decoration-3 hover:underline-offset-8"
                         onMouseEnter={() => setIsOpen(true)}
@@ -59,6 +54,24 @@ const Navbar = () => {
                                         className="px-8 hover:underline hover:decoration-3 hover:underline-offset-8"
                                     >
                                         Register As Organiger
+                                    </Link>
+                                </li>
+
+                                <li className="py-4">
+                                    <Link
+                                        to={"/otp-verify"}
+                                        className="px-8 hover:underline hover:decoration-3 hover:underline-offset-8"
+                                    >
+                                        OTP Verify Page
+                                    </Link>
+                                </li>
+
+                                <li className="py-4">
+                                    <Link
+                                        to={"/otp-reg-verify"}
+                                        className="px-8 hover:underline hover:decoration-3 hover:underline-offset-8"
+                                    >
+                                        Register OTP Verify Page
                                     </Link>
                                 </li>
                             </ul>
