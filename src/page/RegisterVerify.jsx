@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import VerifyLayout from "./layouts/VerifyLayout";
 import InputField from "./../components/InputField";
 import Button from "src/components/Button";
+import { useNavigate } from 'react-router-dom';
 
 const RegisterVerify = () => {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState('');
 
     const handleChange = (e) => {
@@ -12,6 +14,7 @@ const RegisterVerify = () => {
 
       const handleSubmit = () => {
         console.log("Entered Mobile Number", formData);
+        navigate('/otp-verify');
         // Call API or handle OTP verification here
     };
     return (

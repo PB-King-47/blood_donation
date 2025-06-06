@@ -1,9 +1,13 @@
 import React from "react";
-import Logo from "src/assets/logo.svg";
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import Logo from "src/assets/logo.png";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faFacebookF,
+    faTwitter,
+    faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
     const handleClick = () => {
@@ -13,8 +17,11 @@ const Footer = () => {
     return (
         <div className="bg-[#1E2833] py-30 px-50 text-white">
             <div className="flex justify-between">
-                <img className="w-10 bg-white" srcSet={Logo} alt="Logo" />
-
+                <img
+                    className="shadow-2xl rounded-full"
+                    srcSet={Logo}
+                    alt="Logo"
+                />
                 <div className="flex gap-10 items-center">
                     <h2 className="text-2xl">Ready to get started?</h2>
 
@@ -52,36 +59,90 @@ const Footer = () => {
                 <div className="col-box">
                     <h1 className="text-[#FFD2DD] text-xl mb-2">Services</h1>
                     <nav className="flex flex-col">
-                        <Link to={''} className="my-2 capitalize hover:text-[#FFD2DD]">Email Marketing</Link>
-                        <Link to={''} className="my-2 capitalize hover:text-[#FFD2DD]">Campaigns</Link>
-                        <Link to={''} className="my-2 capitalize hover:text-[#FFD2DD]">Branding</Link>
-                        <Link to={''} className="my-2 capitalize hover:text-[#FFD2DD]">Offline</Link>
+                        <Link
+                            to={""}
+                            className="my-2 capitalize hover:text-[#FFD2DD]"
+                        >
+                            Email Marketing
+                        </Link>
+                        <Link
+                            to={""}
+                            className="my-2 capitalize hover:text-[#FFD2DD]"
+                        >
+                            Campaigns
+                        </Link>
+                        <Link
+                            to={""}
+                            className="my-2 capitalize hover:text-[#FFD2DD]"
+                        >
+                            Branding
+                        </Link>
+                        <Link
+                            to={""}
+                            className="my-2 capitalize hover:text-[#FFD2DD]"
+                        >
+                            Offline
+                        </Link>
                     </nav>
                 </div>
 
                 <div className="col-box">
                     <h1 className="text-[#FFD2DD] text-xl mb-2">About</h1>
                     <nav className="flex flex-col">
-                        <Link to={''} className="my-2 capitalize hover:text-[#FFD2DD]">Our Story</Link>
-                        <Link to={''} className="my-2 capitalize hover:text-[#FFD2DD]">Benefits</Link>
-                        <Link to={''} className="my-2 capitalize hover:text-[#FFD2DD]">Team</Link>
-                        <Link to={''} className="my-2 capitalize hover:text-[#FFD2DD]">Careers</Link>
+                        <Link
+                            to={""}
+                            className="my-2 capitalize hover:text-[#FFD2DD]"
+                        >
+                            Our Story
+                        </Link>
+                        <Link
+                            to={""}
+                            className="my-2 capitalize hover:text-[#FFD2DD]"
+                        >
+                            Benefits
+                        </Link>
+                        <Link
+                            to={""}
+                            className="my-2 capitalize hover:text-[#FFD2DD]"
+                        >
+                            Team
+                        </Link>
+                        <Link
+                            to={""}
+                            className="my-2 capitalize hover:text-[#FFD2DD]"
+                        >
+                            Careers
+                        </Link>
                     </nav>
                 </div>
 
                 <div className="col-box">
                     <h1 className="text-[#FFD2DD] text-xl mb-2">Help</h1>
                     <nav className="flex flex-col">
-                        <Link to={''} className="my-2 capitalize hover:text-[#FFD2DD]">FAQs</Link>
-                        <Link to={''} className="my-2 capitalize hover:text-[#FFD2DD]">Contact Us</Link>
+                        <Link
+                            to={""}
+                            className="my-2 capitalize hover:text-[#FFD2DD]"
+                        >
+                            FAQs
+                        </Link>
+                        <Link
+                            to={""}
+                            className="my-2 capitalize hover:text-[#FFD2DD]"
+                        >
+                            Contact Us
+                        </Link>
                     </nav>
                 </div>
             </div>
 
             <div className="flex justify-between">
                 <nav>
-                    <Link to={''} className="mr-8 hover:text-[#FFD2DD]">Terms & Conditions</Link>
-                    <Link to={''} className="hover:text-[#FFD2DD]">Privacy Policy</Link>
+                    <Link to={""} className="mr-8 hover:text-[#FFD2DD]">
+                        Terms & Conditions
+                    </Link>
+                    <Link to={""} className="hover:text-[#FFD2DD]">
+                        Privacy Policy
+                    </Link>
                 </nav>
 
                 <div className="flex gap-10 items-center text-white">
