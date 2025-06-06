@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import BgImage from "src/assets/GradientPanel.png";
 import { bloodGroupOptions, stateOptions } from "src/utils/options.jsx";
-import SelectionInput from "./../components/SelectionInput";
-import Button from "./../components/Button2";
+import SelectionInput from "src/components/SelectionInput";
+import Button from "src/components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
