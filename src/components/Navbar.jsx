@@ -64,6 +64,15 @@ const Navbar = () => {
                                         Register OTP Verify Page
                                     </Link>
                                 </li>
+
+                                <li className="py-4">
+                                    <Link
+                                        to={"/blood-bank"}
+                                        className="px-8 hover:underline hover:decoration-3 hover:underline-offset-8"
+                                    >
+                                        Blood Bank Page
+                                    </Link>
+                                </li>
                             </ul>
                         )}
                     </div>

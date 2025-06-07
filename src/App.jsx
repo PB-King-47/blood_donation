@@ -8,6 +8,7 @@ import FindBlood from './page/FindBlood'
 import OtpVerification from './page/OtpVerification'
 import RegisterVerify from './page/RegisterVerify'
 import OTPVerifySuccess from './page/OTPVerifySuccess'
+import BloodBank from './page/layouts/BloodBank'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path={"/otp-verify"} element={<OtpVerification />} />
         <Route path={"/otp-reg-verify"} element={<RegisterVerify />} />
         <Route path={"/otp-verify-success"} element={<OTPVerifySuccess />} />
+        <Route path={"/blood-bank"} element={<BloodBank />} />
       
       </Route>
     </Routes>
