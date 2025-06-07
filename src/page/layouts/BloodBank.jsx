@@ -1,9 +1,10 @@
 import React from "react";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import BloodBanksTab from "../FindBloodTabs/BloodBanksTab";
+import BloodDonorsTab from "../FindBloodTabs/BloodDonorsTab";
 
 const BloodBank = () => {
-    return (
+    return (       
         <TabGroup className={"content"}>
             <TabList className="flex space-x-1 justify-center p-1">
                 <div className="w-fit bg-[#EAEAEA] rounded-full">
@@ -35,7 +36,10 @@ const BloodBank = () => {
                 </div>
             </TabList>
             <TabPanels className="mt-2">
-                <TabPanel>Content 1</TabPanel>
+                <TabPanel>
+                    <BloodDonorsTab />
+                </TabPanel>
+
                 <TabPanel>
                     <BloodBanksTab />
                 </TabPanel>
