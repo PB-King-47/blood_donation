@@ -5,7 +5,8 @@ import DateCalendarServerRequest from "./../../components/DateCalendarServerRequ
 
 const Profile = () => {
     return (
-        <div className="content">
+        <div className="px-5">
+            <div className="bg-gray-200 rounded-2xl px-5 py-5">
             <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-8">
                     <div className="space-y-6">
@@ -20,6 +21,7 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };
