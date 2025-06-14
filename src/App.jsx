@@ -11,6 +11,7 @@ import OTPVerifySuccess from './page/OTPVerifySuccess'
 import BloodBank from './page/layouts/BloodBank'
 import AdminLayout from './page/layouts/AdminLayout'
 import Dashboard from './page/Admin/Dashboard'
+import Profile from './page/Admin/Profile'
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
 
       <Route element={<AdminLayout />}>
         <Route path={"/admin/dashboard"} element={<Dashboard />} />
+        <Route path={"/admin/profile"} element={<Profile />} />
       </Route>
     </Routes>
   )

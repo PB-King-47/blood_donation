@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Logo from 'src/assets/logo.png';
+import AdminNavbar from "./Admin/AdminNavbar";
 
-const Navbar = () => {
+const Navbar = ({role='user'}) => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <nav className="nav content py-4 z-1">
@@ -85,12 +86,19 @@ const Navbar = () => {
                             </ul>
                         )}
                     </div>
-                    <Link
-                        to={"/"}
-                        className="px-8 py-2 btn border-2 rounded hover:bg-gray-800 hover:text-white hover:rounded"
-                    >
-                        Log In
-                    </Link>
+                    
+                    {role === "user" && (
+                        <Link
+                            to={"/"}
+                            className="px-8 py-2 btn border-2 rounded hover:bg-gray-800 hover:text-white hover:rounded"
+                        >
+                            Log In
+                        </Link>
+                    )}
+
+                    {role === "admin" && (
+                        <AdminNavbar/>
+                    )}
                 </div>
             </div>
         </nav>

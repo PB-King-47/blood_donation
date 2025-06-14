@@ -1,12 +1,12 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import AdminNavbar from 'src/components/Admin/AdminNavbar';
+import Navbar from 'src/components/Navbar';
 
 const AdminLayout = () => {
     return (
         <div>
             <header className=''>
-                <AdminNavbar />
+                <Navbar role={"admin"} />
             </header>
             <main>
                 <Outlet />
