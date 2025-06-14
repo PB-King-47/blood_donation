@@ -10,9 +10,7 @@ const FoundDonor = ({ isOpen, onClose, name, address, contact }) => {
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
-        onClick={onClose}
-        >
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
             <div className="bg-green-600 rounded-xl shadow-lg w-full max-w-md p-10 mx-4">
                 <h2 className="text-2xl font-bold text-white mb-4">{name}</h2>
                 <p className="text-gray-200 mb-1">{address}</p>
@@ -36,6 +34,13 @@ const FoundDonor = ({ isOpen, onClose, name, address, contact }) => {
                         />
                     </svg>
                 </div>
+                <button
+                    type="button"
+                    className="cursor-pointer"
+                    onClick={onClose}
+                >
+                    X
+                </button>
             </div>
         </div>
     );

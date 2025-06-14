@@ -9,6 +9,8 @@ import OtpVerification from './page/OtpVerification'
 import RegisterVerify from './page/RegisterVerify'
 import OTPVerifySuccess from './page/OTPVerifySuccess'
 import BloodBank from './page/layouts/BloodBank'
+import AdminLayout from './page/layouts/AdminLayout'
+import Dashboard from './page/Admin/Dashboard'
 
 function App() {
 
@@ -23,7 +25,10 @@ function App() {
         <Route path={"/otp-reg-verify"} element={<RegisterVerify />} />
         <Route path={"/otp-verify-success"} element={<OTPVerifySuccess />} />
         <Route path={"/blood-bank"} element={<BloodBank />} />
-      
+      </Route>
+
+      <Route element={<AdminLayout />}>
+        <Route path={"/admin/dashboard"} element={<Dashboard />} />
       </Route>
     </Routes>
   )

@@ -73,6 +73,15 @@ const Navbar = () => {
                                         Blood Bank Page
                                     </Link>
                                 </li>
+
+                                <li className="py-4">
+                                    <Link
+                                        to={"/admin/dashboard"}
+                                        className="px-8 hover:underline hover:decoration-3 hover:underline-offset-8"
+                                    >
+                                        Admin Page
+                                    </Link>
+                                </li>
                             </ul>
                         )}
                     </div>
