@@ -12,6 +12,7 @@ import BloodBank from './page/layouts/BloodBank'
 import AdminLayout from './page/layouts/AdminLayout'
 import Dashboard from './page/Admin/Dashboard'
 import Profile from './page/Admin/Profile'
+import DonorDashboard from './page/DonorDashboard'
 
 function App() {
 
@@ -29,8 +30,8 @@ function App() {
       </Route>
 
       <Route element={<AdminLayout />}>
-        <Route path={"/admin/dashboard"} element={<Dashboard />} />
-        <Route path={"/admin/profile"} element={<Profile />} />
+        <Route path={"/admin/dashboard"} element={<Profile />} />
+        <Route path={"/admin/donordashboard"} element={<DonorDashboard />} />
       </Route>
     </Routes>
   )

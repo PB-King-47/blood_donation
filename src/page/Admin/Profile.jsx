@@ -8,17 +8,16 @@ const Profile = () => {
         <div className="content">
             <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-8">
-                    <div className="mb-10">
+                    <div className="space-y-6">
                         <ProNameSec />
-                    </div>
                     <ProAbout />
+                    </div>
                 </div>
                 <div className="col-span-4">
-                    <div className="mb-10">
+                    <div className="space-y-6">
                         <ProDonationHistory />
+                        <DateCalendarServerRequest />
                     </div>
-
-                    <DateCalendarServerRequest />
                 </div>
             </div>
         </div>
